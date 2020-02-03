@@ -212,7 +212,7 @@ def delete_endpoints(duplicates):
 
     for guid in duplicates:
         url = auth_string + "/v1/computers/" + guid
-        print guid
+        print(guid)
         response =  requests.request("DELETE", url)
 
 if __name__ == '__main__':
